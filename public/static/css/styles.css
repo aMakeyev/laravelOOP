@@ -1,0 +1,248 @@
+body {
+	min-height: 600px;
+	margin-bottom: 50px;
+}
+.navbar-static-top {
+	margin-bottom: 19px;
+}
+.form-signin {
+	max-width: 330px;
+	padding: 15px;
+	margin: 0 auto;
+}
+.form-signin .form-signin-heading {
+	text-align: center;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+	margin-bottom: 10px;
+}
+.form-signin .checkbox {
+	font-weight: normal;
+}
+.form-signin .form-control {
+	position: relative;
+	height: auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10px;
+	font-size: 16px;
+}
+.form-signin .form-control:focus {
+	z-index: 2;
+}
+.form-signin input[type="email"] {
+	margin-bottom: -1px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+	margin-bottom: 10px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-top: none;
+}
+.form-signin input[name="login"] {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.buttons {
+	margin: 10px 0;
+}
+small.error {
+	color: red;
+}
+h1 > .glyphicon {
+	font-size: 0.75em;
+}
+div.toolbar {
+	padding: 5px 5px;
+	background-color: #fafafa;
+}
+.buttons-group hr {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#calculation .form-group {
+	margin-bottom: 5px;
+}
+.form-control.input-total {
+	background-color: #009926;
+	color: #fff;
+	font-weight: 700;
+	border-color: #009926
+}
+.modal-body hr {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.modal-body .form-group {
+	margin-bottom: 10px;
+}
+.table-info {
+	width: 600px;
+	margin: 0 auto;
+}
+.table-info tbody > tr > td {
+	vertical-align: middle;
+}
+.table-info tr > td:first-child {
+	font-weight: bold;
+}
+/* Make clicks pass-through */
+#nprogress {
+	pointer-events: none;
+}
+#nprogress .bar {
+	background: #29d;
+
+	position: fixed;
+	z-index: 1031;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 2px;
+}
+/* Fancy blur effect */
+#nprogress .peg {
+	display: block;
+	position: absolute;
+	right: 0;
+	width: 100px;
+	height: 100%;
+	box-shadow: 0 0 10px #29d, 0 0 5px #29d;
+	opacity: 1.0;
+
+	-webkit-transform: rotate(3deg) translate(0px, -4px);
+	-ms-transform: rotate(3deg) translate(0px, -4px);
+	transform: rotate(3deg) translate(0px, -4px);
+}
+/* Remove these to get rid of the spinner */
+#nprogress .spinner {
+	display: block;
+	position: fixed;
+	z-index: 1031;
+	top: 15px;
+	right: 15px;
+	border: none;
+}
+#nprogress .spinner-icon {
+	width: 18px;
+	height: 18px;
+	box-sizing: border-box;
+
+	border: solid 2px transparent;
+	border-top-color: #29d;
+	border-left-color: #29d;
+	border-radius: 50%;
+
+	-webkit-animation: nprogress-spinner 400ms linear infinite;
+	animation: nprogress-spinner 400ms linear infinite;
+}
+.nprogress-custom-parent {
+	overflow: hidden;
+	position: relative;
+}
+.nprogress-custom-parent #nprogress .spinner,
+.nprogress-custom-parent #nprogress .bar {
+	position: absolute;
+}
+.top-menu li {
+	font-size: 13px;
+}
+.top-menu li > a {
+	padding: 6px 10px;
+}
+@-webkit-keyframes nprogress-spinner {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+@keyframes nprogress-spinner {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.calc-docs-generate {
+	margin-top: 10px;
+}
+.mt-1{
+	margin-top:3px;
+}
+
+.top-menu li > a {
+	font-size:16px;
+}
+.d-mobile{
+	display:none!important;
+}
+.d-none{
+	display:none!important;
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 415px) {
+
+	.d-mobile{
+		display:block!important;
+	}
+	.d-no-mobile{
+		display:none!important;
+  	}
+	.m-pull-left{
+		float:left!important;
+	}
+
+	.btn-success, .btn-info, .btn-danger, .btn-primary{
+		margin:7px;
+	}
+	.combo {
+		margin:5px;
+	}
+	.top-menu li > a {
+		font-size: 20px;
+	}
+	.pagination {
+		/*zoom:133%;*/
+	}
+	.pagination-info {
+		display:none;
+	}
+	.l-btn-icon {
+		zoom:140%;
+	}
+	.table-info {
+		width:100%;
+	}
+	.nav.top-menu > li{
+		float:none;
+	}
+	.toolbar.datagrid-toolbar{
+		zoom:120%;
+	}
+	.searchbox-text.searchbox-prompt{
+		width:245px !important;
+	}
+	.searchbox{
+		width:266px !important;
+	}
+	.subject-title > .row > div {
+		height: unset!important;
+		line-height: unset!important;
+	}
+	.add-coef-input{
+		position: absolute;
+		bottom: 0;
+		opacity: 0;
+	}
+
+}

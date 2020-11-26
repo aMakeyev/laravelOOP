@@ -1,0 +1,155 @@
+/* angular-ui-tree css file */
+.angular-ui-tree-empty {
+}
+.angular-ui-tree-nodes {
+	display: block;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	list-style: none
+}
+.angular-ui-tree-nodes .angular-ui-tree-nodes {
+	margin-left: 40px;
+	border-left: 1px solid #ddd;
+	padding-left: 15px;
+}
+.angular-ui-tree-node, .angular-ui-tree-placeholder {
+	display: block;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	min-height: 20px;
+	line-height: 20px
+}
+.angular-ui-tree-hidden {
+	display: none
+}
+.angular-ui-tree-placeholder {
+	margin: 5px 0;
+	padding: 0;
+	min-height: 30px
+}
+.angular-ui-tree-handle {
+	cursor: move;
+	text-decoration: none;
+	font-weight: 700;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	line-height: 20px
+}
+.angular-ui-tree-drag {
+	position: absolute;
+	pointer-events: none;
+	z-index: 999;
+	opacity: .8
+}
+.tree-node-content:after,
+.angular-ui-tree-node:after {
+	display: table;
+	content: "";
+	clear: both;
+}
+.category-block {
+	margin-bottom: 20px;
+	border-bottom: 1px dotted #bbb;
+	padding-bottom: 15px;
+}
+.angular-ui-tree-handle {
+	font-weight: normal;
+}
+.category-node-title {
+	font-size: 1.3em;
+}
+.category-tree-node {
+	margin-bottom: 9px;
+}
+.angular-ui-tree-node label {
+	font-weight: normal;
+	font-size: 14px;
+}
+.angular-ui-tree-node button {
+	font-weight: normal;
+	font-size: 12px;
+}
+.angular-ui-tree-placeholder {
+	background-color: #fafafa;
+	border: 1px dotted #ddd;
+}
+.node-editing input[type="text"] {
+	border: none;
+	border-radius: 3px;
+	box-shadow: 0 0 1px #aaa inset;
+	box-sizing: border-box;
+	left: -6px;
+	padding: 0 0 0 6px;
+	position: relative;
+	width: 220px;
+}
+.node-editing label {
+	margin: 0;
+}
+.category-row {
+	height: 23px;
+	line-height: normal;
+}
+.node_type input {
+	vertical-align: -2px;
+}
+.element-node-title .btn, .category-node-title .btn {
+	padding: 0;
+	margin-left: 4px;
+	opacity: 0.2;
+	transition: opacity 0.5s;
+}
+.element-node-title:hover .btn, .category-node-title:hover .btn {
+	opacity: 1;
+	transition: opacity 0.3s;
+}
+.separator {
+	color: #aaa;
+	font-size: 13px;
+	margin: 0 0 0 4px;
+}
+.element-node {
+	background-color: rgba(238, 238, 238, 0.26);
+	border: 1px solid #eee;
+	border-radius: 3px;
+	margin-bottom: 5px;
+	padding: 6px 11px;
+	position: relative;
+}
+.element-node:before {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+	box-shadow: 0 0 0 2px #fff;
+	content: "";
+	display: block;
+	height: 11px;
+	left: -22px;
+	position: absolute;
+	top: 14px;
+	width: 11px;
+}
+.element-node:hover:before {
+	background-color: #ddd;
+}
+.drag-handler {
+	border-right: 1px solid #eee;
+	display: inline-block;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 33px;
+	text-align: center;
+}
+.drag-handler > span {
+	color: #aaa;
+	font-size: 1.4em;
+	line-height: 32px;
+}
+.element-node-title {
+	padding-left: 30px;
+}

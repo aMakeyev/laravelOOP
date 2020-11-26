@@ -1,0 +1,50 @@
+{
+    "name": "laravel/laravel",
+    "description": "The Laravel Framework.",
+    "keywords": ["framework", "laravel"],
+    "license": "MIT",
+    "require": {
+        "laravel/framework": "4.2.*",
+        "barryvdh/laravel-ide-helper": "~1.11",
+        "way/generators": "2.*",
+        "edvinaskrucas/notification": "dev-master",
+        "barryvdh/laravel-debugbar": "1.*",
+        "darsain/laravel-console": "dev-master",
+        "phpoffice/phpword": "dev-master",
+        "phpoffice/phpexcel": "dev-master"
+    },
+    "autoload": {
+        "classmap": [
+            "app/libs",
+            "app/database/migrations",
+            "app/database/seeds"
+        ],
+        "psr-4": {
+            "Calc\\": "src/Calc"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "php artisan clear-compiled",
+            "php artisan optimize"
+        ],
+        "post-update-cmd": [
+            "php artisan clear-compiled",
+            "php artisan ide-helper:generate",
+            "php artisan optimize"
+        ],
+        "post-create-project-cmd": [
+            "php artisan key:generate"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "minimum-stability": "stable",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/vanchelo/notification"
+        }
+    ]
+}

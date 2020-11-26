@@ -1,0 +1,2 @@
+class Coeffs
+  constructor: (@url) ->
